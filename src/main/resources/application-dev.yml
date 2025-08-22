@@ -14,9 +14,9 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/dscatalog
+    url: jdbc:postgresql://localhost:5436/dsgameapi
     username: postgres
-    password: 1234567
+    password: admin
 
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
