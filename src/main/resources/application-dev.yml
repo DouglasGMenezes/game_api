@@ -11,19 +11,85 @@
 #       hibernate:
 #         hbm2ddl:
 #           delimiter: ;
+#
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5436/dslist
+#    username: postgres
+#    password: admin
+#
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    properties:
+#      hibernate:
+#        jdbc:
+#          lob:
+#            non_contextual_creation: true
+#    hibernate:
+#      ddl-auto: none
+
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5436/dsgameapi
+    url: jdbc:postgresql://localhost:5435/dslist
     username: postgres
     password: admin
 
+
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
-        jdbc:
-          lob:
-            non_contextual_creation: true
-    hibernate:
-      ddl-auto: none
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.lob.non_contextual_creation: true
+
+
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      jakarta:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#            scripts:
+#              action: create
+#              create-target: create.sql
+#      hibernate:
+#        jdbc:
+#          lob:
+#            non_contextual_creation: true
+#        hbm2ddl:
+#          delimiter: ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
